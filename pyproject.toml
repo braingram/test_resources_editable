@@ -1,0 +1,19 @@
+[project]
+name = 'resources-editable'
+description = 'example project testing resources for editable installs'
+requires-python = '>=3.9'
+version = "0.0.1"
+
+[build-system]
+requires = [
+    "setuptools >=61",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["resources_editable", "resources_editable.resources"]
+
+[tool.setuptools.package-dir]
+"resources_editable" = "src/resources_editable"
+"resources_editable.resources" = "resources"
